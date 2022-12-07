@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+
+    --hue-color: 0;
+    --links-underline-color: hsl(var(--hue-color),90%,60%);
+    --bright-text-color: hsl(var(--hue-color),100%, 100%);
+    --dull-text: hsl(var(--hue-color),10%, 70%);
+    --highlight-text: hsl(var(--hue-color),90%, 70%);
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background-image: linear-gradient(180deg, black, #344542); */
+    background-color: black;
+    position: relative;
+    overflow-x: hidden;
+}
+a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+    color: var(--bright-text-color);
+}
+h2{
+    color: var(--bright-text-color);
+}
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: white;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    /* font-size: 1rem; */
+    color: white;
+}
+
+/***************************************** NAVBAR **************************************************/
+.navbar{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: black;
+}
+.navbar .navbar-brand{
+    color: var(--bright-text-color);
+    background-color: black;
+}
+
+.navbar ul.navbar-nav li a{
+    color: var(--bright-text-color);
+    margin: 0.8rem;
+    position: relative;
+    text-decoration: none;
+}
+.navbar ul.navbar-nav li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--links-underline-color);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.navbar ul.navbar-nav li a:hover::after{
+    width: 100%;
+}
+   
+
+/* for small screen navbar */
+
+.navbar-toggler-icon i{
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+/***************************************** TOP CONTAINER *************************************************/
+.top-container{
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(/Images/BACK.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    opacity: 1;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.top-left-container{
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 50%;
+}
+
+.top-left-container h1 span{
+    color: var(--links-underline-color);
+}
+
+/****************************************** ABOUT ME CONTAINER **************************************************/
+
+.about-me .row-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    padding: 50px 10px;
+    margin-top: 50px;
+    margin-bottom: 90px;
+    /* margin: 50px 0; */
+    
+}
+
+
+.aboutme-left-container{
+  max-width: 80%;
+  height: 100%;
+  position: relative;
+  float: left;
+  margin-right: 100px;
+  
+}
+#aboutLightImage{
+    max-width: 100%;
+    height: 100%;
+    position: center;
+    size: cover;   
+}
+#aboutMeImage{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 50%;
+    height: 50%;
+    
+}
+/* Right Container */
+.aboutme-right-container{
+max-width: 100%;
+height: 100%;
+margin-left: 10px;
+
+}
+.aboutme-right-container p {
+    color: var(--dull-text);
+}
+/* links */
+.about-links ul{
+padding: 0%;
+}
+.about-links ul li{
+    display: inline-block;
+    padding: 0;
+    margin-right: 20px;
+}
+.about-links ul li a{
+color: var(--dull-text);
+margin-right: 3rem;
+position: relative;
+text-decoration: none;
+}
+
+.about-links ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--links-underline-color);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.about-links ul li a:hover::after{
+    width: 100%;
+}
+
+.about-links ul li a.active-link::after{
+     width: 50%;
+}
+
+/* info */
+.about-info {
+    margin-top: 50px;
+    display: none;
+}
+.active-tab{
+    display: block;
+}
+
+.showblock{
+    display: block;
+}
+.about-info .info {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+
+}
+.about-info .info p{
+margin-bottom: 0;
+font-size: 0.9rem;
+color: var(--highlight-text);
+
+}
+.about-info .info h5{
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: var(--dull-text);
+    
+}
+
+/****************************************** SKILLS CONTAINER **************************************************/
+.my-skills-section{
+    padding: 50px 100px;
+    /* box-shadow: 20px 20px 800px grey; */
+    margin: 80px 50px;
+    
+}
+.skills-div{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+/* .skills-heading{
+    padding-left: 50px;
+    display: inline-block;
+}
+
+.skils-icon{
+    display: inline-block;
+} */
+
+.skills-tab-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top : 70px;
+    padding: 0;
+    margin-left: 0;
+
+
+}
+.skills-tab-container img{
+    border-radius: 50px;
+    padding-left: 0;
+    }
+
+.skills{
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: var(--dull-text);
+    margin:10px;
+}
+.skills a{
+    color: var(--bright-text-color);
+}
+
+.skills-frontend,.skills-backend,.skills-appdev{
+    transition: 0.3s ease;
+}
+.skills-frontend:hover{
+    box-shadow: 0 0 3px black;
+    transform: translate(0, -20px);
+    background-color: #b8b8b8;
+}
+.skills-backend:hover{
+    box-shadow: 0 0 3px black;
+    transform: translate(0, -20px);
+    background-color: #E56161;
+}
+.skills-appdev:hover{
+    box-shadow: 0 0 3px black;
+    transform: translate(0, -20px);
+    background-color: #A30000;
+}
+
+/****************************************** WORK CONTAINER **************************************************/
+.my-work-section{
+    padding: 50px;
+    /* box-shadow: 20px 20px 800px grey; */
+    margin: 150px 50px;
+}
+.work-div{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 50px;
+}
+
+.work-list-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin : 70px 0;
+    padding: 0;
+}
+
+.work{
+    width: 315px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    background-color: #E56161;
+}
+
+.work img{
+    width: 100%;
+    height: 100%;
+    height: 350px;
+    transition: 0.3s ease;
+    }
+
+.work:hover img{
+        transform: scale(1.1);
+       } 
+.work:hover .overlay{
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: height .5s ease;
+    color: var(--bright-text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    padding: 0 40px;
+  }
+
+.overlay h3{
+    font-weight: 500;
+    margin: 20px;
+}
+
+.overlay a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.overlay a i{
+    margin: auto;
+    padding: 15px 0;
+}
+/* CSS */
+.btn {
+  display: block;
+  margin: 30px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  color: var(--bright-text-color);
+  text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #ff004f;
+}
+
+/****************************************** CONTACT CONTAINER **************************************************/
+
+.contact-container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 100px 40px;
+    flex-basis: 35%;
+}
+.contact-info h2{
+    font-size: 50px;
+    margin: 40px 0;
+}
+.fa-solid{
+    color: #ff004f;
+    margin-right: 20px;
+}
+
+.contact-message{
+    margin: 60px 0;
+    flex-basis: 55%;
+}
+
+
+.contact-info .download-resume-btn{
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  color: var(--bright-text-color);
+  text-decoration: none;
+}
+
+.contact-btn{
+  color: #000;
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  margin: 5% 5px;
+  transition: 0.3s ease;
+  padding: 8px;
+}
+
+form input, form textarea{
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #262626;
+    border-radius: 6px;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
+.contact-message button {
+    display: inline-block;
+    width: auto;
+    margin-top: 30px;
+    margin-right: 50px;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    color: var(--bright-text-color);
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+}
+.contact-message button:hover,
+.contact-info a:hover{
+    background-color: #ff004f;
+}
+.footer-text{
+    margin: 20px auto;
+    text-align: center;
+}
+
+#msg{
+    color: #61b752;
+}
+/********************************* for small screens *****************************************/
+@media only screen and (max-width:600px){
+
+    /* p{
+        font-size: small;
+    }
+    h1{
+        font-size: 1.5rem;
+    } */
+    #navbarNav > ul{
+        align-items: flex-end;
+        text-align: right;
+        margin: 1rem
+    }
+
+    /* *********************AboutMe Section******************* */
+
+    .aboutme-heading, .skills-heading, .work-heading{
+        font-size:1.8rem;
+    }
+    .about-me .row-container{
+        flex-flow:column nowrap;
+        
+    }
+    .about-links ul li{
+        margin: 0;
+    }
+    .about-links ul li a{
+        margin-right: 20px;
+    }
+
+    /* *********************Skills Section******************* */
+
+    body{
+        overflow-x: hidden;
+    }
+    .my-skills-section{
+        padding: 0;
+        margin: 0 30px;
+    }
+    .skills-div{
+        flex-flow: row nowrap;
+    }
+
+    .skills-tab-container{
+       flex-flow: column nowrap;
+    }
+    .skills{
+        margin: 20px 0;
+    }
+
+    /* *********************Work Section******************* */
+
+    .my-work-section{
+        padding: 0;
+        margin: 80px 30px;
+    }
+
+    .work-div{
+        flex-flow: row nowrap;
+        margin: 0;
+    }
+
+    .work-list-container{
+        flex-flow: column nowrap;
+     }
+     .work{
+         margin: 20px 0;
+     }
+
+     /* *********************Contact Section******************* */
+     .contact-container{
+        flex-flow: column nowrap;
+     }
+
+     input,textarea{
+        margin: 5% 5%;
+     }
+
+     .contact-message button{
+        margin: 5% 5%;
+     }
+     .contact-message form{
+        margin: 5px 5px;
+     }
+
+}
+
+
+
+
+ 
+
+
+

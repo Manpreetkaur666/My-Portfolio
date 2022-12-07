@@ -1,0 +1,299 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/78ec4dfdd6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+ <!-------------------------------------- NAVBAR ------------------------------------------------>
+
+<body>
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <a class="navbar-brand" href="#"><span style="color:red; font: weight 800px;">M</span>anpreet.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="uil uil-bars"></i></span>
+            <!-- <i id="bar" class="uil uil-bars"> -->
+          </button>
+          <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+      <!----------------------------------- TOP CONTAINER ----------------------------------------->
+    <div class="top-container container-fluid">
+        <div class="top-left-container">
+            <p>Web Developer</p>
+            <h1>Hi, I m <span>Manpreet</span> <br>Kaur from Canada</h1>
+        </div>
+        <div class="curve"></div>
+    </div>
+
+    <!----------------------------------------ABOUT ME ------------------------------------------------>
+
+    <section class="about-me container-fluid" id="about">
+        <div class="row-container">
+            <div class="aboutme-left-container col-lg-3 col-md-3 col-sm-6">
+                <img id="aboutLightImage" src="Images/light.png" alt="">
+                <img id="aboutMeImage" src="Images/me.png" alt="">
+            </div>
+            <div class="aboutme-right-container col-lg-6 col-md-6 col-sm-6">
+                <h1 class="aboutme-heading">About Me</h1>
+                <p>I am Web Developer from Canada. I have done my major studdies in 
+                    computers field, had education from India and Canada. Experience 
+                    developing dynamic websites and mobile Apps. I am constantly learning
+                    and improving day by day. I am looking for an opportunity where I can grow
+                    and master my skills and excel in the company to take it to higher heights.
+                </p>
+                <div class="about-links">
+                    <ul>
+                        <li>
+                            <a class="about-link active-link" onclick="openTab('skills')">Skills</a>
+                        </li>
+                        <li>
+                            <a class="about-link" onclick="openTab('experience')">Experience</a>
+                        </li>
+                        <li>
+                            <a class="about-link" onclick="openTab('education')">Education</a>
+                        </li>
+                    </ul>
+                </div>
+                   <!-- SKILLS TAB -->
+                <div class="about-info skills-info active-tab" id="skills">
+                    <div class="info">
+                        <p>Front-End Development</p>
+                        <h5>Using HTML,CSS,JavaScipt</h5>
+                    </div>
+                    <div class="info">
+                        <p>Back-End Development</p>
+                        <h5>Using Node.js, Express, EJS, MongodB, MySQL.</h5>
+                    </div>
+                    <div class="info">
+                        <p>App Development</p>
+                        <h5>Using Swift</h5>
+                    </div>
+                </div>
+                    <!-- EXPERIENCE TAB -->
+                <div class="about-info experience-info" id="experience">
+                    <div class="info">
+                        <p>Live Projects</p>
+                        <h5>Developed website for medical startup and freelencing.</h5>
+                    </div>
+                    <div class="info">
+                        <p>Projects</p>
+                        <h5>Multiple Projects to showcase my knowledge as part of my trainning.</h5>
+                    </div>
+                    <div class="info">
+                        <p>iOS development</p>
+                        <h5>Developed various Apps as part of my college course.</h5>
+                    </div>
+                </div>
+                     <!-- EDUCATION TAB -->
+                <div class="about-info education-info" id="education">
+                    <div class="info">
+                        <p>Mobile Application Development (PG Diploma)</p>
+                        <h5>Georgian College, Barrie, ON</h5>
+                    </div>
+                    <div class="info">
+                        <p>Big Data Analytics (PG Diploma)</p>
+                        <h5>Georgian College, Barrie, ON</h5>
+                    </div>
+                    <div class="info">
+                        <p>Bachelors in Computers Technology(Graduation Degree)</p>
+                        <h5>Punjabi University, Patiala, Punjab, India</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!----------------------------------------SKILLS SECTION ------------------------------------------>
+
+    <section class="my-skills-section" id="skills">
+        <div class="skills-div">
+            <h1 class="skills-heading">My Skills</h1>
+            <img class="skils-icon" width="70" height="70" src="Images/skills.png" alt="">
+        </div>
+        
+    <div class="skills-tab-container">
+        <div class="skills skills-frontend" >
+            <img width="100" height="100" src="Images/frontEnd.gif" alt="">
+            <!-- <i class="uil uil-arrow"></i> -->
+            <h4>Front-End</h4>
+            <p>I have well equiped knowledge of HTML, CSS, bootstrap
+                and Javascript to make website looks good on front-end.
+            </p>
+        </div>
+
+        <div class="skills skills-backend">
+            <img width="100" height="100" src="Images/backEnd.gif" alt="">
+            <!-- <i class="uil uil-arrow"></i> -->
+            <h4>Back-End</h4>
+            <p>Back-End part is very crucial to make the websites dynamic.
+                I use MySQL, MongodB and node JS to interact with the server.
+            </p>
+        </div>
+
+        <div class="skills skills-appdev">
+            <img width="100" height="100" src="Images/appDev.gif" alt="">
+            <!-- <i class="uil uil-arrow"></i> -->
+            <h4>App Development</h4>
+            <p>I have used Swift to develop iOS Apps.
+                I have developed many apps as part of my college course and in my trainning.
+            </p>
+        </div>
+    </div>
+
+    </section>
+
+
+    <!----------------------------------------WORK SECTION ------------------------------------------>
+
+    <section class="my-work-section" id="work">
+        <div class="work-div">
+            <h1 class="work-heading">My Work</h1>
+            <img class="work-icon" width="70" height="70" src="Images/work.png" alt="">
+        </div>
+            
+        
+    <div class="work-list-container">
+        <div class="work work-1" >
+            <img src="Images/newsbites.png" alt="" />   
+            <div class="overlay">
+                <h3>NewsBites</h3>
+                <p>NewsBites is a daily news App using new API.There are different category
+                    News, also has Infinite Scroll and top loading bar.(React, News API)
+                </p>
+                 <a target="_blank" href="https://github.com/Manpreetkaur666/NewsBites"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+            </div>
+        </div>
+
+        <div class="work work-2">
+            <img src="Images/Carousel/DrumKit.png" alt="">
+            <div class="overlay">
+                <h3>DrumKit game</h3>
+                <p>This is a Drum Kit Player. Player can use mouse to play the different
+                    drum note and flash the button. Also, Keyboard 
+                    can be used to play different notes.
+                </p>
+                 <a target="_blank" href="https://github.com/Manpreetkaur666/Drum-Kit"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+
+        <div class="work work-3">
+            <img src="Images/Carousel/todoList.png" alt="">
+            <div class="overlay">
+                <h3>ToDo List</h3>
+                <p>Todo List is a list to add , update or delete the activity.
+                    you can keep a track of the things to do in a day.I used CRUD in mongodb and 
+                    heroku to deploy the website.
+                </p>
+                 <a target="_blank" href="https://manpreettodo.herokuapp.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <a target="_blank" href="https://github.com/Manpreetkaur666?tab=repositories" class="btn">see more</a>
+    </section>
+
+    <!----------------------------------------CONTACT SECTION ------------------------------------------>
+
+    <section class="my-contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Me</h2>
+                <p><i class="fa-solid fa-paper-plane"></i>mk27982@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+1(705)970-7666</p>
+                <a class="download-resume-btn" href="doc/Manpreet_Kaur_Resume.pdf" download>Download CV</a>
+                <div>
+                <a class="contact-btn" target="_blank" href="https://www.linkedin.com/in/manpreet-kaur-%F0%9F%91%88%F0%9F%8F%BC-41b104199/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="contact-btn" target="_blank" href="https://github.com/Manpreetkaur666?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                </div>  
+            </div>
+                
+            
+            <div class="contact-message">
+                <form action="mailto:mk27982@gmail.com" name="submit-to-google-sheet" method="post" enctype="text/plain">
+                    <input type="text" name="Name" placeholder="Your Name">
+                    <input type="text" name="Email" placeholder="Your Email">
+                    <textarea name="Message" placeholder="Your Message" id="" rows="7"></textarea>
+                    <button type="submit">Send</button>
+                    <button type="reset">Reset</button>
+                    <span id="msg"></span>
+                    </form>
+            </div>
+        </div>
+        <p class="footer-text">Made with ❤️ by Manpreet Kaur.</p>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+        function openTab(tabName) {
+            var aboutLinks = document.getElementsByClassName('about-link');
+            var aboutInfos = document.getElementsByClassName('about-info');
+            console.log(tabName);
+        
+            for(i=0; i< aboutLinks.length; i++){
+                console.log(aboutLinks[i]);
+                aboutLinks[i].classList.remove('active-link');
+            }
+            for(i=0; i< aboutInfos.length; i++){
+                console.log(aboutInfos[i]);
+                aboutInfos[i].classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+          
+        
+        }
+      </script>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx8pbQfdXW8V8rRhMHufeQvuE7W9YOpCCbDxzPDH1I07h0qXyGMQcAQYeuKz1qAWqY2/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset();
+            })
+            .catch(error => {
+                msg.innerHTML = "Error sending message!"
+            })
+        })
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
