@@ -86,11 +86,11 @@
                 <div class="about-info skills-info active-tab" id="skills">
                     <div class="info">
                         <p>Front-End Development</p>
-                        <h5>Using HTML,CSS,JavaScipt</h5>
+                        <h5>Using HTML, CSS, JavaScipt, React</h5>
                     </div>
                     <div class="info">
                         <p>Back-End Development</p>
-                        <h5>Using Node.js, Express, EJS, MongodB, MySQL.</h5>
+                        <h5>Using Node.js, Express, EJS, MongodB, Firebase.</h5>
                     </div>
                     <div class="info">
                         <p>App Development</p>
@@ -145,7 +145,7 @@
             <img width="100" height="100" src="Images/frontEnd.gif" alt="">
             <!-- <i class="uil uil-arrow"></i> -->
             <h4>Front-End</h4>
-            <p>I have well equiped knowledge of HTML, CSS, bootstrap
+            <p>I have well equiped knowledge of HTML, CSS, bootstrap, React
                 and Javascript to make website looks good on front-end.
             </p>
         </div>
@@ -155,7 +155,7 @@
             <!-- <i class="uil uil-arrow"></i> -->
             <h4>Back-End</h4>
             <p>Back-End part is very crucial to make the websites dynamic.
-                I use MySQL, MongodB and node JS to interact with the server.
+                I use MongodB and node JS to interact with the server.
             </p>
         </div>
 
@@ -285,7 +285,8 @@
             .then(response => {
                 msg.innerHTML = "Message Sent Successfully!"
                 setTimeout(function(){
-                    msg.innerHTML = ""
+                    msg.innerHTML = "";
+                    msg.style.color = "red";
                 },5000)
                 form.reset();
             })
