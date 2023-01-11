@@ -300,6 +300,7 @@ color: var(--highlight-text);
     padding: 50px;
     /* box-shadow: 20px 20px 800px grey; */
     margin: 150px 50px;
+    position: relative;
 }
 .work-div{
     display:flex;
@@ -317,7 +318,7 @@ color: var(--highlight-text);
 }
 
 .work{
-    width: 315px;
+    width: 50vw;
     border-radius: 10px;
     transition: 0.3s ease;
     overflow: hidden;
@@ -395,6 +396,48 @@ color: var(--highlight-text);
 .btn:hover {
     background-color: #ff004f;
 }
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    size: 60px;
+    top: 45%;
+    width: auto;
+    /* margin-top: -2px; */
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+.prev:hover, .next:hover{
+    color: #ff004f;
+  }
+
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+.active, .dot:hover {
+    background-color: #717171;
+  }
 
 /****************************************** CONTACT CONTAINER **************************************************/
 
@@ -553,7 +596,7 @@ form input, form textarea{
         flex-flow: column nowrap;
      }
      .work{
-         margin: 20px 0;
+         margin: 20px 70px;
      }
 
      /* *********************Contact Section******************* */
@@ -577,7 +620,6 @@ form input, form textarea{
 
 
 
- 
 
 
 
