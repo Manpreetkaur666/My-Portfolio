@@ -38,7 +38,6 @@ h2 {
   font-weight: 500;
   color: var(--bright-text-color);
   margin-bottom: 2vmax;
-  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
 }
 h3 {
   color: var(--bright-text-color);
@@ -51,8 +50,16 @@ h4 {
 p {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
-  /* font-size: 1rem; */
+  /* font-size: 2.5rem; */
   color: white;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--bright-text-color);
+  margin-bottom: 2vmax;
+  -webkit-box-reflect: below -1vmax linear-gradient(transparent, rgba(0, 0, 0, 0.2));
 }
 
 /***************************************** NAVBAR **************************************************/
@@ -115,7 +122,7 @@ p {
 .top-left-container {
   margin: auto;
   padding: 25px;
-  height: 55%;
+  height: fit-content;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
@@ -127,8 +134,9 @@ p {
 }
 
 .top-left-container p {
-  font-size: 1.1vmax;
-  font-weight: 100;
+  font-size: 1.2vmax;
+  font-weight: bold;
+  color: var(--dull-text);
 }
 
 .top-left-container div {
@@ -594,13 +602,28 @@ form textarea {
 }
 /********************************* for small screens *****************************************/
 @media only screen and (max-width: 600px) {
+
+  .top-left-container p {
+    font-size: 1.8vmax;
+  }
+
+  .top-left-container h1 {
+    font-size: 2.5rem;
+  }
+
   #navbarNav > ul {
     align-items: flex-end;
     text-align: right;
     margin: 1rem;
   }
 
-  /* *********************Contact Section******************* */
+  /* *********************TOP-CONTAINER SECTION******************* */
+
+  .waviy {
+    display: inline-block;
+  }
+
+  /* *********************ABOUT SECTION******************* */
 
   .aboutme-heading,
   .skills-heading,
@@ -657,10 +680,6 @@ form textarea {
     position: relative;
     background-color: #e56161;
     margin: 2vmax 0;
-  }
-
-  .overlay {
-    height: fit-content;
   }
 
   /* .my-work-section {
